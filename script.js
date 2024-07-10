@@ -29,7 +29,7 @@ let counter = (start) => {
         div.style.height = "20px";
         div.style.backgroundColor = "red";
         div.innerHTML = `Counter: ${count}`;
-        div.addEventListener("click", () => {count++});
+        div.addEventListener("click", () => {div.innerHTML = `Counter: ${count++}`});
         document.body.append(div);
     }
 }
